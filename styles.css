@@ -1,0 +1,16 @@
+#landing{
+  height: 50vh;
+  background-image: url('img/mainprofile.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  z-index: -1;
+}
+#mainText{
+  margin-top: 30vh;
+}
+
+body {
+  font-size: medium;
+}

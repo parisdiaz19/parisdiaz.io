@@ -75,12 +75,12 @@
         <div class="row center-align">
           <div class="col s12">
               <h5>Technical Skills</h5>                         
-                  <div class="col s3"><img id="skill" src="img/html.png"></div>           
-                  <div class="col s3"><img id="skill" src="img/css3-512.png"></div>
-                  <div class="col s3"><img id="skill" src="img/javascript.svg" ></div>
-                  <div class="col s3"><img id="skill" src="img/sass-1.svg" ></div>
-                  <div class="col s6"><img id="skill" src="img/bootstrap-social-logo.png"></div>
-                  <div class="col s6"><img id="skill" src="img/matcss-min.png" ></div>                                          
+                  <div class="col s3"><img class="tooltipped" data-position="bottom" data-tooltip="HTML5" id="skill" src="img/html.png"></div>           
+                  <div class="col s3"><img class="tooltipped" data-position="bottom" data-tooltip="CSS3 (Cascading Style Sheets)" id="skill" src="img/css3-512.png"></div>
+                  <div class="col s3"><img class="tooltipped" data-position="bottom" data-tooltip="JavaScript/ES6" id="skill" src="img/javascript.svg" ></div>
+                  <div class="col s3"><img class="tooltipped" data-position="bottom" data-tooltip="SASS" id="skill" src="img/sass-1.svg" ></div>
+                  <div class="col s6"><img class="tooltipped" data-position="bottom" data-tooltip="Bootstrap" id="skill" src="img/bootstrap-social-logo.png"></div>
+                  <div class="col s6"><img class="tooltipped" data-position="bottom" data-tooltip="Materialize" id="skill" src="img/matcss-min.png" ></div>                                          
           </div>
           </div>
         </div>
@@ -201,18 +201,34 @@
               <h5 id='footertitle' class="white-text center-align">Contact Me</h5>
               <div class="row">
               <ul class="footer-list col s12">
-                <li class="footer-list"><a class="btn-floating pulse grey-text text-lighten-3" href="
+                <li class="footer-list"><a class="btn-floating pulse grey-text text-lighten-3 tooltipped" data-position="bottom" data-tooltip="Check out my GitHub!" href="
                   https://github.com/parisdiaz19"><i class="fab fa-github fa-3x"></i></a></li>
-                <li class="footer-list"><a class="btn-floating pulse grey-text text-lighten-3" href="https://www.linkedin.com/in/paris-diaz-9a33b711b/"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
-                <li class="footer-list"><a class="btn-floating pulse grey-text text-lighten-3" href="mailto:parisdiaz719@gmail.com"><i class="fas fa-envelope fa-3x"></i></a></li>            
-                <li class="footer-list"><a href="img/My Resume.pdf" class="btn-floating pulse grey-text text-lighten-3" download=""><i class="fas fa-file fa-3x"></i></a></li>              
+                <li class="footer-list"><a class="btn-floating pulse grey-text text-lighten-3 tooltipped" data-position='bottom'
+                  data-tooltip="Let's connect on LinkedIn!" href="https://www.linkedin.com/in/paris-diaz-9a33b711b/"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
+                <li class="footer-list"><a class="btn-floating pulse grey-text text-lighten-3 tooltipped" data-position="bottom"
+                  data-tooltip="Send me an email!"
+                  href="mailto:parisdiaz719@gmail.com"><i class="fas fa-envelope fa-3x"></i></a></li>            
+                <li class="footer-list"><a href="img/My Resume.pdf" class="btn-floating pulse grey-text text-lighten-3 tooltipped" data-position="bottom"
+                  data-tooltip="Download my Resume!" 
+                  download=""><i class="fas fa-file fa-3x"></i></a></li>              
               </ul>
             </div>
             </div>
           </div>
-        </div>       
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          <p class="center-align">© 2020 Paris Diaz</p>
+          </div>
+        </div>
+      </footer>       
       </footer>
-   
+
+      <script>
+      $(document).ready(function(){
+        $('.tooltipped').tooltip();
+      });
+    </script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>

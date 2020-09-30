@@ -18,3 +18,12 @@ body {
 #skill {
   height: 75px;
 }
+
+.footer-list {
+  text-align: center;
+  display: inline;
+  float: none;
+  display: inline-block;
+  
+}
+

@@ -8,7 +8,7 @@
   z-index: -1;
 }
 #mainText{
-  margin-top: 30vh;
+  margin-top: 10vh;
 }
 
 body {
@@ -34,5 +34,9 @@ body {
 
 main {
   flex: 1 0 auto;
+}
+
+.empty-content {
+  padding: 100px;
 }
 

@@ -1,6 +1,6 @@
 #landing{
   height: 50vh;
-  background-image: url('img/mainprofile.jpeg');
+  background-image: url('img/main.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
   z-index: -1;
 }
 #mainText{
-  margin-top: 20vh;
+  margin-top: 30vh;
 }
 
 body {

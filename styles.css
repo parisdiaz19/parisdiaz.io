@@ -36,9 +36,7 @@ main {
   flex: 1 0 auto;
 }
 
-.empty-content {
-  padding: 100px;
-}
+
 
 .card-image {
   height: 400px;
@@ -51,4 +49,8 @@ main {
 
 .card {
   cursor: pointer;
+}
+
+footer {
+  margin-top: 40px;
 }

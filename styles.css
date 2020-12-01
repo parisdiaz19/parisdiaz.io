@@ -94,4 +94,7 @@ footer {
   animation: fadeIn 1s;
 }
 
-
+form {
+  border: black solid;
+  
+}

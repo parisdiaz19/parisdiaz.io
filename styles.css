@@ -24,16 +24,15 @@ body {
   cursor: pointer;
 }
 
-.footer-list {
-  text-align: center;
-  display: inline;
-  float: none;
-  display: inline-block;
-  
-}
 
 main {
   flex: 1 0 auto;
+}
+
+#about {
+  background-color: #bf73d6;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 
@@ -54,3 +53,45 @@ main {
 footer {
   margin-top: 40px;
 }
+
+.hamburger { 
+  margin-right: 30px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.socials li {
+  display: inline-block;
+  margin: 10px;
+}
+
+#submit-btn {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #30658e;
+  border: solid black 1px;
+
+}
+
+.popup .popuptext {
+  visibility: hidden;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+

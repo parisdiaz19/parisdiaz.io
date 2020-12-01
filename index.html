@@ -12,6 +12,12 @@
     <script src="https://kit.fontawesome.com/920fff83c0.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_8Xa5kfxrBTU7iTm7x4WJY");
+        })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Paris Diaz</title>
   </head>
@@ -57,20 +63,51 @@
         <h1 style="color: white;"  class="center">
             Paris <b>Diaz</b>
         </h1>
+        <h4 class="center white-text">Developer, Violinist, and Coffee Addict</h4>
       </div>
 
-      <div id="about" class="container">
+      <div id="about" class="container black-text">
         <div class="section">
-          <h5 class="center-align"><b>About Me</b></h5>
-          <div class="divider"></div>
-          <p>I have a passion for coding and challenging myself creatively. I decided to become a developer because I am inspired by the idea of becoming a better me today than I was yesterday.
+          <h4 class="center-align"><b>Welcome!</b></h4>
+          <div class="divider black"></div>
+          <p class="center">I'm Paris, a motivated and passionate front-end developer! My love for coding
+            began with building websites for local clients. Realizing that I could turn this passion into a career,
+            I took a few classes/courses, and constantly challenged myself to learn more and become a better developer each day.
+            By creating personal projects and website for clients, I built a foundation for coding, and a better understanding of design
+            standards. I enjoy creating content that allows me to grow and share my creative abilities.
           </p>
   
-          <p>I'm currently looking for an opportunity to work as a Front-End Web Developer.</p>
-          <p>When I'm not busy building websites and apps, you can find me practicing violin and working out at the gym.</p>
-  
-          <p>If you'd like to learn more about me, feel free to visit my contact section.</p>
+          <p class="center">When I'm not busy building websites and applications, you can find me practicing violin working
+            on the latest concerto or lifting weights at the gym, trying to beat last weeks personal record.</p>
+
+      
+
         </div>
+        </div>
+      </div>
+
+      <div class="row container center">
+        <div class="socials col s12">  
+            <ul class="col s12">
+              <li>
+                  <a class=""  
+                    href="https://github.com/parisdiaz19" 
+                    target="_blank">
+                    <i class="fab fa-github fa-3x"></i>
+                  </a>
+              </li>
+  
+                <li>
+                    <a class="" href="https://www.linkedin.com/in/paris-diaz-9a33b711b/" target="_blank">
+                    <i class="fab fa-linkedin-in fa-3x"></i>
+                  </a>
+              </li>
+              <li>
+                  <a class="" href="mailto:parisdiaz719@gmail.com" target="_blank">
+                  <i class="fas fa-envelope fa-3x"></i>
+                </a>
+            </li>                     
+            </ul>
         </div>
       </div>
          
@@ -241,42 +278,43 @@
             </div>
           </div>
         </div>
-      </div>
-     
+      </div>   
     </div>
-
-    
-
       </div>
     </div>
+
+  <div class="container" class="form">
+      <h5 class="center">Send Me a Message</h5>
+      <p class="center">I'd love to hear from you!</p>
+
+    <form id="contact-form">
+      <input type="hidden" name="contact_number">
+      <div class="row">
+        <div class="col s6">
+          <label>Your Name</label>
+          <input id="name" type="text" name="user_name">
+        </div>
+        <div class="col s6">
+          <label>Your Email</label>
+          <input id="email" type="email" name="user_email">
+        </div>    
+        <label>Message</label>
+        <textarea id="message" name="message"></textarea>
+        <input type="submit" value="Send">
+        <div class="popup">
+          <span class="popuptext center" id="myPopup">Your message has been sent!</span>
+        </div>
+      </div> 
+    </form>
+  </div>
     
-    <div class="empty-content"></div>
+    
+  
                
       <footer class="end page-footer purple darken-3">
-        <div id="contact" class="container">
-          <div class="row left-align">
-            <div class="col s12">
-              <h5 id='footertitle' class="white-text center-align">Contact Me</h5>
-              <div class="row">
-              <ul class="footer-list col s12">
-                <li class="footer-list"><a class="btn-floating pulse grey-text text-lighten-3 tooltipped purple lighten-3" data-position="bottom" data-tooltip="Check out my GitHub!" href="
-                  https://github.com/parisdiaz19" target="_blank"><i class="fab fa-github fa-3x"></i></a></li>
-                <li class="footer-list"><a class="btn-floating pulse grey-text text-lighten-3 tooltipped purple lighten-3" data-position='bottom'
-                  data-tooltip="Let's connect on LinkedIn!" href="https://www.linkedin.com/in/paris-diaz-9a33b711b/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
-                <li class="footer-list"><a class="btn-floating pulse grey-text text-lighten-3 tooltipped purple lighten-3" data-position="bottom"
-                  data-tooltip="Send me an email!"
-                  href="mailto:parisdiaz719@gmail.com"><i class="fas fa-envelope fa-3x"></i></a></li>            
-                <li class="footer-list"><a href="img/ParisDiazResume.pdf" class="btn-floating pulse grey-text text-lighten-3 tooltipped purple lighten-3" data-position="bottom"
-                  data-tooltip="Download my Resume!" 
-                  download=""><i class="fas fa-file fa-3x"></i></a></li>              
-              </ul>
-            </div>
-            </div>
-          </div>
-        </div>
         <div class="footer-copyright">
           <div class="container">
-          <p class="center-align">© 2020 Paris Diaz</p>
+          <p class="center-align">2020 Paris Diaz</p>
           </div>
         </div>
       </footer>       
@@ -286,6 +324,7 @@
       $(document).ready(function(){
         $('.tooltipped').tooltip();
       });
+      $('.dropdown-trigger').dropdown();
     </script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

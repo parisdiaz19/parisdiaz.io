@@ -5,7 +5,7 @@ window.onload = function() {
         // generate a five digit number for the contact_number variable
         // these IDs from the previous steps
         var templateParams = {
-            name: document.getElementById('name').value,
+            from_name: document.getElementById('name').value,
             email: document.getElementById('email').value,
             message: document.getElementById('message').value,
         };

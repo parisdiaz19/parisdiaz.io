@@ -89,7 +89,9 @@
         <div class="socials col s12">  
             <ul class="col s12">
               <li>
-                  <a class=""  
+                  <a class="tooltipped"
+                    data-position="bottom"
+                    data-tooltip="Check out more of my work on Github!"  
                     href="https://github.com/parisdiaz19" 
                     target="_blank">
                     <i class="fab fa-github fa-3x"></i>
@@ -97,15 +99,30 @@
               </li>
   
                 <li>
-                    <a class="" href="https://www.linkedin.com/in/paris-diaz-9a33b711b/" target="_blank">
+                    <a class="tooltipped"
+                    data-position="top"
+                    data-tooltip="Connect with me on LinkedIn!" 
+                    href="https://www.linkedin.com/in/paris-diaz-9a33b711b/" 
+                    target="_blank">
                     <i class="fab fa-linkedin-in fa-3x"></i>
                   </a>
               </li>
               <li>
-                  <a class="" href="mailto:parisdiaz719@gmail.com" target="_blank">
+                  <a class="tooltipped"
+                  data-position="bottom"
+                  data-tooltip="Send me an email!" 
+                  href="mailto:parisdiaz719@gmail.com" target="_blank">
                   <i class="fas fa-envelope fa-3x"></i>
-                </a>
-            </li>                     
+                </a>               
+            </li> 
+            <li>
+              <a class="tooltipped"
+              data-position="top"
+              data-tooltip="Download my Resume!" 
+              href="/img/CurrentResume.pdf" download>
+              <i class="fas fa-file fa-3x"></i>
+            </a>         
+        </li>                                         
             </ul>
         </div>
       </div>
@@ -127,7 +144,7 @@
         </div>
 
         <div class="divider"></div>
-        <h5 class="center-align"><b>My Projects</b></h5>
+        <h5 id="project-title" class="center-align"><b>My Projects</b></h5>
    
         <div id="projects" class="container">
         <div class="row">
@@ -282,7 +299,7 @@
       </div>
     </div>
 
-  <div class="container">
+  <div id="contact" class="container">
     <form id="contact-form">
       <h5 class="center">Send Me a Message</h5>
       <p class="center">I'd love to hear from you!</p>
@@ -305,14 +322,12 @@
       </div>
         <div class="col s12 center-align">   
         <button class="btn waves-effect waves-light purple darken-3" type="submit" value="Send" name="action">Submit
-          <i class="material-icons right">send</i>
         </button>
       </div> 
       </div> 
     </div>
     </form>
   </div>
-    
     
   
                
@@ -329,7 +344,6 @@
       $(document).ready(function(){
         $('.tooltipped').tooltip();
       });
-      $('.dropdown-trigger').dropdown();
     </script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

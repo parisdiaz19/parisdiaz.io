@@ -6,7 +6,13 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -1;
+  margin-bottom: 50px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 #mainText{
   margin-top: 10vh;
 }
@@ -30,7 +36,8 @@ main {
 }
 
 #about {
-  background-color: #bf73d6;
+  
+  border: black solid;
   border-radius: 5px;
   margin-top: 20px;
 }
@@ -74,27 +81,15 @@ footer {
 
 }
 
-.popup .popuptext {
-  visibility: hidden;
-}
-
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.popup .show {
-  visibility: visible;
-  animation: fadeIn 1s;
-}
-
 form {
   border: black solid;
-  
+  margin-top: 30px;
+}
+
+#project-title {
+  margin-bottom: 30px;
+}
+
+i {
+  color: indigo;
 }

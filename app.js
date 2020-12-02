@@ -13,9 +13,10 @@ window.onload = function() {
         emailjs.send('service_w9hz06w', 'template_egwaz4f', templateParams)
             .then(function(res) {
                 console.log('SUCCESS!', res.status);
-                alert("Message has been sent. Thank you!")
+                M.toast({html: 'Message has been sent. Thank you!'})
             }, function(error) {
                 console.log('FAILED...', error);
+                M.toast({html: 'An error has occured while sending the message... Check your information and try again'})
             });
     });
 }

@@ -1,6 +1,6 @@
-#landing{
+#landing {
   height: 50vh;
-  background-image: url('img/main.jpg');
+  background-image: url("img/main.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,36 +13,48 @@ html {
   scroll-behavior: smooth;
 }
 
-#mainText{
+#mainText {
   margin-top: 10vh;
+  opacity: 0;
+  animation: fadein 2s forwards;
+}
+
+#name {
+  opacity: 0;
+  animation: fadein 2s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 body {
   font-size: medium;
-
 }
 
 #skill {
   height: 75px;
 }
 
-#skill:hover{
+#skill:hover {
   cursor: pointer;
 }
-
 
 main {
   flex: 1 0 auto;
 }
 
 #about {
-  
   border: black solid;
   border-radius: 5px;
   margin-top: 20px;
 }
-
-
 
 .card-image {
   height: 400px;
@@ -61,7 +73,7 @@ footer {
   margin-top: 40px;
 }
 
-.hamburger { 
+.hamburger {
   margin-right: 30px;
   background-color: black;
   border-radius: 50%;
@@ -78,7 +90,6 @@ footer {
   border-radius: 5px;
   background-color: #30658e;
   border: solid black 1px;
-
 }
 
 form {
@@ -97,4 +108,3 @@ i {
 .skill-title {
   margin-bottom: 50px;
 }
-
